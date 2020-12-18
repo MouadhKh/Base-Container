@@ -8,5 +8,5 @@ ADD bookRecommendations.txt /data
 #RUN chmod -R 777 /data
 
 ADD requirements.txt /
-EXPOSE 22
+EXPOSE 5000
 CMD ["/usr/bin/env", "bash"]
