@@ -15,7 +15,7 @@ steps:
     displayName: Build and push
     inputs:
       command: buildAndPush
-      repository: kaiiz3n/books-app
+      repository: kaiiz3n/books-api-base
       tags: |
         latest
 
