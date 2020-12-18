@@ -1,0 +1,13 @@
+click~=7.0
+Flask==1.1.2
+itsdangerous==1.1.0
+Jinja2~=2.10.1
+MarkupSafe~=1.1.0
+Werkzeug==1.0.1
+colorama~=0.4.3
+cryptography~=2.8
+keyring~=18.0.1
+attrs~=19.3.0
+blinker~=1.4
+simplejson~=3.16.0
+setuptools~=45.2.0
