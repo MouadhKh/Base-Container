@@ -15,7 +15,7 @@ steps:
     displayName: Build and push
     inputs:
       command: buildAndPush
-      repository: qcumber3/qc-pipeline-base
+      repository: kaiiz3n/books-app
       tags: |
         latest
         $(Build.BuildNumber)
