@@ -13,6 +13,11 @@ ADD pip-20.2.2-py2.py3-none-any.whl /
 RUN apt-get update && apt-get -yq install --no-install-recommends \
     wget python3 python3-setuptools
 
+#install git
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y git
+    
 # install python dependencies
 RUN	/bin/sh -c "python3 /pip-20.2.2-py2.py3-none-any.whl/pip install -r /requirements.txt" \
     && rm -rf /pip-20.2.2-py2.py3-none-any.whl /requirements.txt
