@@ -8,7 +8,7 @@ ADD bookRecommendations.txt /data
 #RUN chmod -R 777 /data
 
 ADD requirements.txt /
-ADD pip-20.2.2-py2.py3-none-any.whl /
+ADD pip-20.2.2-py2.py3-none-any.whl /wheels
 
 RUN apt-get update && apt-get -yq install --no-install-recommends \
     wget python3 python3-setuptools
