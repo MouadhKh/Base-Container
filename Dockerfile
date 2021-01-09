@@ -1,6 +1,7 @@
 FROM 	ubuntu:focal
 
 ENV TEST_DATA=/data
+ENV LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
 ENV PYTHONPATH=$PYTHONPATH:/opt
 
 #Add test data
