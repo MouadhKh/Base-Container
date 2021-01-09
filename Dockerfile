@@ -19,7 +19,7 @@ RUN apt-get update && \
     apt-get install -y git
     
 # install python dependencies
-RUN	/bin/sh -c "python3 /wheels/pip-20.2.2-py2.py3-none-any.whl/pip install -r /requirements.txt" \
+RUN	/bin/sh -c "python3 wheels/pip-20.2.2-py2.py3-none-any.whl/pip install -r /requirements.txt" \
     && rm -rf /pip-20.2.2-py2.py3-none-any.whl /requirements.txt
 
 EXPOSE 5000
