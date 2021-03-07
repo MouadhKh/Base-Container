@@ -9,13 +9,13 @@ steps:
     displayName: Login to Docker
     inputs:
       command: login
-      containerRegistry: dockerHub
+      containerRegistry: <DOCKER_REGISTRY>
 
   - task: Docker@2
     displayName: Build and push
     inputs:
       command: buildAndPush
-      repository: kaiiz3n/books-api-base
+      repository: <MAIN_PROJECT_BASE>
       tags: |
         latest
 
@@ -23,4 +23,4 @@ steps:
     displayName: Logoff from Docker
     inputs:
       command: logout
-      containerRegistry: dockerHub
+      containerRegistry: <DOCKER_REGISTRY>

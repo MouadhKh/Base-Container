@@ -4,7 +4,7 @@ ENV TEST_DATA=/data
 ENV PYTHONPATH=$PYTHONPATH:/opt
 
 #Add test data
-ADD bookRecommendations.txt /data
+ADD testdata.txt /data
 #RUN chmod -R 777 /data
 
 ADD requirements.txt /
