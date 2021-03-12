@@ -15,7 +15,7 @@ steps:
     displayName: Build and push
     inputs:
       command: buildAndPush
-      repository: <MAIN_PROJECT_BASE>
+      repository: <DOCKER_USER>/<MAIN_PROJECT_BASE>
       tags: |
         latest
 
